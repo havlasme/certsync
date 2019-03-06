@@ -1,0 +1,16 @@
+Package: certsync
+Architecture: amd64
+Version: 1.0.0-0~buster
+Priority: optional
+Essential: no
+Section: custom
+Maintainer: apt.rebit.sk
+Depends: rsync, socat
+Filename: pool/main/buster/certsync-1.0.0-0~buster_all.deb
+Size: 2912
+MD5sum: 674a7803657ba07be4c5e4cefaf4c7d4
+SHA1: 7305e6a2de200c14e3887db65044014e03398f96
+SHA256: ce489552cddfd5d95870369a0edb77c5da49efa58771888e88e23b67f55487f7
+SHA512: 546d81a2c2e6b593574c70e42961a773ed4585bf9fda05e405b5e2887792b5611dcb99d7718fb5e346b6cf85c3aa829bd72a4af1e3004b400d6d6bd81ec31153
+Description: certificate synchronization util
+

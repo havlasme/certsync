@@ -1,0 +1,27 @@
+Dir {
+	ArchiveDir "./public/debian";
+	CacheDir "./cache";
+};
+Default {
+	Packages::Compress ". gzip bzip2";
+	Sources::Compress ". gzip bzip2";
+	Contents::Compress ". gzip bzip2";
+};
+TreeDefault {
+	BinCacheDB "packages-$(SECTION)-$(ARCH).db";
+	Packages "$(DIST)/$(SECTION)/binary-$(ARCH)/Packages";
+	Sources "$(DIST)/$(SECTION)/source/Sources";
+	Contents "$(DIST)/Contents-$(ARCH)";
+};
+Tree "dists/buster" {
+	Sections "main";
+	Architectures "amd64 all";
+	Directory "pool/$(SECTION)/buster";
+	SrcDirectory "pool/$(SECTION)/buster";
+}
+Tree "dists/bullseye" {
+	Sections "main";
+	Architectures "amd64 all";
+	Directory "pool/$(SECTION)/bullseye";
+	SrcDirectory "pool/$(SECTION)/bullseye";
+}

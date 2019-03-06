@@ -1,0 +1,6 @@
+etc/bash_completion.d/certsync				    custom/certsync
+etc/default/certsync-nethook				    custom/certsync
+lib/systemd/system/certsync-nethook.service		    custom/certsync
+usr/local/bin/certsync					    custom/certsync
+usr/local/libexec/certsync-nethook			    custom/certsync
+usr/share/doc/certsync/script/certsync-restrict		    custom/certsync

@@ -1,0 +1,16 @@
+Package: certsync
+Architecture: amd64
+Version: 1.0.0-0~focal
+Priority: optional
+Essential: no
+Section: custom
+Maintainer: apt.rebit.sk
+Depends: rsync, socat
+Filename: pool/main/focal/certsync-1.0.0-0~focal_all.deb
+Size: 2912
+MD5sum: 83b042f2e2af93f84c06b98e893f4ba7
+SHA1: d7d7d178acca33f544e5db329343cce0d8250605
+SHA256: 57ebe0def787e17e3c56017fcd005ccc679072bf8dd2d6ffdd393521c71008f9
+SHA512: e0596169b4ebeacfff591ca19df2b9f1eaf01d550dbda86f3a911285579d312b2bfe2e54ab0ba872925880c30ddf5d54110aa25b0603c76b2f4cb4fa09e1f9e1
+Description: certificate synchronization util
+

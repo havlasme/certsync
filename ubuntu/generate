@@ -1,0 +1,27 @@
+Dir {
+	ArchiveDir "./public/ubuntu";
+	CacheDir "./cache";
+};
+Default {
+	Packages::Compress ". gzip bzip2";
+	Sources::Compress ". gzip bzip2";
+	Contents::Compress ". gzip bzip2";
+};
+TreeDefault {
+	BinCacheDB "packages-$(SECTION)-$(ARCH).db";
+	Packages "$(DIST)/$(SECTION)/binary-$(ARCH)/Packages";
+	Sources "$(DIST)/$(SECTION)/source/Sources";
+	Contents "$(DIST)/Contents-$(ARCH)";
+};
+Tree "dists/bionic" {
+	Sections "main";
+	Architectures "amd64 all";
+	Directory "pool/$(SECTION)/bionic";
+	SrcDirectory "pool/$(SECTION)/bionic";
+}
+Tree "dists/focal" {
+	Sections "main";
+	Architectures "amd64 all";
+	Directory "pool/$(SECTION)/focal";
+	SrcDirectory "pool/$(SECTION)/focal";
+}

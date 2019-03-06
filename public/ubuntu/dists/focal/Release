@@ -1,0 +1,63 @@
+Architectures: amd64 all
+Codename: focal
+Components: main
+Date: Mon, 23 May 2022 12:39:44 +0000
+Label: apt.havlas.me
+Origin: apt.havlas.me
+Suite: focal
+MD5Sum:
+ 2a58e6d6957ae013f4265b90cdaf5b19              344 Contents-all
+ b0ba6a222db1bd40deefacea6a07d03a              197 Contents-all.bz2
+ 87de1a9717b38bbcdd202671a0820779              170 Contents-all.gz
+ d41d8cd98f00b204e9800998ecf8427e                0 Contents-amd64
+ 0902e5a0182062319472ac442793db1b               28 Contents-amd64.bz2
+ e62ff0123a74adfc6903d59a449cbdb0               40 Contents-amd64.gz
+ 3b6949b4af865beadd1a5487b652f533              152 Release
+ bdf9be31a6a78c85d06bf2a8a24c5673              570 main/binary-all/Packages
+ 47641913bd6ea5c4b10333537b37f300              441 main/binary-all/Packages.bz2
+ 17ffb8c38e354b77e0b88ebeca8df297              435 main/binary-all/Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e                0 main/binary-amd64/Packages
+ 0902e5a0182062319472ac442793db1b               28 main/binary-amd64/Packages.bz2
+ e62ff0123a74adfc6903d59a449cbdb0               40 main/binary-amd64/Packages.gz
+SHA1:
+ 7ceebcba3bee9bd08196ca3593a048fb6337295a              344 Contents-all
+ dd7b9465367efaafccb85a604705adce55d83583              197 Contents-all.bz2
+ 7424d8a8e2b3915ff3b39213dfeda9caba526aef              170 Contents-all.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 Contents-amd64
+ dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 Contents-amd64.bz2
+ e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 Contents-amd64.gz
+ f16cf8522ce4cbd1852f9e24a9638674a7f0fa6b              152 Release
+ 9140861d415c3f21f6e6db0ec0c3e05557aefbc5              570 main/binary-all/Packages
+ a83b6e3bc34cf3814bacb86798bd417950034697              441 main/binary-all/Packages.bz2
+ c51d01ef36e78e95bd7a70e80fe97a339bdd5c0c              435 main/binary-all/Packages.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 main/binary-amd64/Packages
+ dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 main/binary-amd64/Packages.bz2
+ e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 main/binary-amd64/Packages.gz
+SHA256:
+ ea1051bb80afd1fa2cb0a416e2fade570626242a6dd1b9ac7db852174e85776f              344 Contents-all
+ 85a210e66f302b46b21d7f6d9b16a3705b5df553959d2083639d6fef1d0a7800              197 Contents-all.bz2
+ a48efbbbd01b1ab7a822521f421ba7b1e01aff55c7ddf5aace311f104d85ebf9              170 Contents-all.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 Contents-amd64
+ f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 Contents-amd64.bz2
+ e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 Contents-amd64.gz
+ 8adce5c529a077b0a0760013fc9113570f91b42f88f401c76d004d9de2c1b28f              152 Release
+ e54f4444762ceaa40493abefaf1feb8af2134facb81560894906ea3b48b851b4              570 main/binary-all/Packages
+ fd5eebaa74b61a35d12601c7c9407baf6733ec3ec424392dc95c97fa3321c0ef              441 main/binary-all/Packages.bz2
+ dd3f542aadc978b825ab3ae80e89762ae0ca79f45a95cdc5b40f092b45153488              435 main/binary-all/Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 main/binary-amd64/Packages
+ f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 main/binary-amd64/Packages.bz2
+ e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 main/binary-amd64/Packages.gz
+SHA512:
+ 84605d3bfa6afeaeba87f58dc4d6fcf03dc7e99cdb6fba0c471d79e7af1679faada863252dd61937a787914edc9ec9f0b9e0a4ae2bca12e61b80abc1be1ee5f3              344 Contents-all
+ df76e55ffc957084e8732707866009caa9139e74916a1f90929e43c237775b584ab07462be5f575fcab56ed74b9c30dbd576980f4d4505a29370bac34911aee7              197 Contents-all.bz2
+ 66f91bc7656578725ea89d524aa0028b214561b2a013636e1b168f1bc7173ad553387edbfd0d8aed858e1a6f255adabc13e698ff7c81a3b375be00d1de924e0e              170 Contents-all.gz
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 Contents-amd64
+ 37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 Contents-amd64.bz2
+ 4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 Contents-amd64.gz
+ da5d181938f5a0220e8aac89df9f28d863d4f2f3db4fd9034fc231c944f77622fb4e880dc7750a3024c92d8a8a7b631e53943c14689fc743dc6a667cd8df8b0e              152 Release
+ 6e05cda197a177781805c21f3bd759375024fb26c4b82859e83826672bacb524fcebac536e7ebf65abb6578d40a389cb2afc56dbd86e162e04c56e44699c82e3              570 main/binary-all/Packages
+ 46bec919cc4e9a22e6834e6e8d94d4a73f45de1973e51573674b7bd2b65c274488e832c435cb632355ef8a86e92d67554a4e1360b2bfa006a64859e92ef2ea65              441 main/binary-all/Packages.bz2
+ a318e9091823906b3bd752bbc0639c996f9fb5d4d5dddb291f34282231e654acee8f1450b59d2028ee0adbbd53a7478b265c8a2662aaf0de65546dfaf3971d58              435 main/binary-all/Packages.gz
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 main/binary-amd64/Packages
+ 37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 main/binary-amd64/Packages.bz2
+ 4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 main/binary-amd64/Packages.gz

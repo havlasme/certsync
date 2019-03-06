@@ -1,0 +1,6 @@
+APT::FTPArchive::Release::Codename "bionic";
+APT::FTPArchive::Release::Origin "apt.havlas.me";
+APT::FTPArchive::Release::Components "main";
+APT::FTPArchive::Release::Label "apt.havlas.me";
+APT::FTPArchive::Release::Architectures "amd64 all";
+APT::FTPArchive::Release::Suite "bionic";

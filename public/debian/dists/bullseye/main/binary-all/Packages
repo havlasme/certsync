@@ -1,0 +1,16 @@
+Package: certsync
+Architecture: amd64
+Version: 1.0.0-0~bullseye
+Priority: optional
+Essential: no
+Section: custom
+Maintainer: apt.rebit.sk
+Depends: rsync, socat
+Filename: pool/main/bullseye/certsync-1.0.0-0~bullseye_all.deb
+Size: 2916
+MD5sum: cad662679bdab95aea43bd324ddc9731
+SHA1: 181ecdedc99d49dfe983b6c7a5ce32504635b283
+SHA256: 4fad78368da7d225d1869fe1f344c490c4a8637edceab31dfddaf9f7a541750d
+SHA512: 069a8ace2bf90dc493df4cddaade52d8277b5678b0e1bb20048ba9f7b78e3f8eca98a4dcc17d9fb9911862ede2520fb948f378a9c647497aa57e58eee321b7ce
+Description: certificate synchronization util
+
