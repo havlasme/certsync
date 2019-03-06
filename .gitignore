@@ -1,0 +1,5 @@
+# build
+/build
+
+# intellij idea
+.idea

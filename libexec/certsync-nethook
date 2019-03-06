@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -o errexit
+set -o nounset
+
+function _certsync_nethook_main() {
+    local domain token
+
+    read -r -d' ' domain
+    read -r -d' ' token
+
+    domain="$(basename "${domain}")"
+
+    if [[ -f "/etc/certsync/sync/${domain}" ]]; then
+        readarray -t CERTSYNC < <( env -i "$(grep -v -E '^#|^\s*$' "/etc/certsync/sync/${domain}")" )
+        declare "${CERTSYNC[@]}"
+
+        if [[ "${token}" == "${CERTSYNC_NETHOOK_TOKEN}" ]]; then
+            certsync sync "${domain}"
+        fi
+    fi
+    echo "DOMAIN: ${domain} TOKEN: ${token}"
+}
+
+_certsync_nethook_main "$@"

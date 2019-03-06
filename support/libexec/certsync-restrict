@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -o errexit
+set -o nounset
+
+function _certsync_restrict_main() {
+    local domain="$1"; shift
+
+    rsync --server --sender -Lpre.iLsfxCIvu . "/etc/letsencrypt/live/${domain}/"
+}
+
+_certsync_restrict_main "$@"

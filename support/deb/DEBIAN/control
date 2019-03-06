@@ -1,0 +1,9 @@
+Package: certsync
+Version: ${VERSION}
+Section: custom
+Priority: optional
+Architecture: amd64
+Essential: no
+Maintainer: apt.rebit.sk
+Description: certificate synchronization util
+Depends: rsync, socat

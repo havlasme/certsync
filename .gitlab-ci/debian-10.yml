@@ -1,0 +1,32 @@
+build debian 10 package:
+  image: debian:10
+  stage: build
+  rules:
+  - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+  before_script:
+  - 'which make || ( apt-get update -y && apt-get install build-essential -y )'
+  - 'which fakeroot || ( apt-get update -y && apt-get install fakeroot -y )'
+  - 'which envsubst || ( apt-get update -y && apt-get install gettext-base -y )'
+  script:
+  - 'DISTNAME="~buster" DISTARCH="all" make build-deb'
+  artifacts:
+    paths:
+    - build/*.deb
+    expire_in: 2 weeks
+
+push debian 10 package to registry:
+  image: debian:latest
+  stage: release
+  rules:
+  - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_COMMIT_MESSAGE =~ /\[ci release\]/'
+  needs:
+  - job: build debian 10 package
+    artifacts: true
+  before_script:
+  - 'which make || ( apt-get update -y && apt-get install build-essential -y )'
+  - 'which fakeroot || ( apt-get update -y && apt-get install fakeroot -y )'
+  - 'which envsubst || ( apt-get update -y && apt-get install gettext-base -y )'
+  - 'which curl || ( apt-get update -y && apt-get install curl -y )'
+  script:
+  - 'TAG="$(make version)"'
+  - 'curl -f -H "JOB-TOKEN: $CI_JOB_TOKEN" -T build/certsync-${TAG}~buster_all.deb "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/debian-10/${TAG}/certsync-${TAG}_all.deb"'

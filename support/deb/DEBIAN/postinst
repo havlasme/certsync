@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "configure" ]; then
+    if [ -d /run/systemd/system ]; then
+        systemctl --system daemon-reload >/dev/null || true
+    fi
+fi
+
+exit 0

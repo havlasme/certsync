@@ -1,0 +1,14 @@
+[Unit]
+Description=certificate synchronization util
+After=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/default/certsync-nethook
+ExecStart=/usr/bin/socat $OPTIONS
+ExecReload=/bin/kill -HUP $MAINPID
+SyslogIdentifier=certsync
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

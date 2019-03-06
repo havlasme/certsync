@@ -1,0 +1,29 @@
+function _certsync_domain_list() {
+    ls -A1 "/etc/certsync/sync"
+}
+
+function _certsync() {
+    COMPREPLY=()
+    local current="${COMP_WORDS[COMP_CWORD]}"
+    local prev="${COMP_WORDS[COMP_CWORD-1]}"
+
+    local actions="init restrict sync"
+
+    case "${prev}" in
+    sync)
+        local domain; domain=$(_certsync_domain_list)
+
+        COMPREPLY=($(compgen -W "${domain}" -- ${current}))
+        return 0
+        ;;
+
+    certsync)
+        COMPREPLY=($(compgen -W "${actions}" -- ${current}))
+        return 0
+        ;;
+    esac
+
+    return 0
+}
+
+complete -F _certsync certsync
