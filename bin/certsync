@@ -70,6 +70,8 @@ function _certsync_main() {
         echo "CERTSYNC_SSHKEY=${CERTSYNC_SSHKEY}" >> "/etc/certsync/sync/${domain}"
         echo "CERTSYNC_NETHOOK_TOKEN=${CERTSYNC_NETHOOK_TOKEN}" >> "/etc/certsync/sync/${domain}"
 
+        mkdir "/etc/certsync/live/${domain}"
+
         _certsync_main restrict "${domain}"
         ;;
 
