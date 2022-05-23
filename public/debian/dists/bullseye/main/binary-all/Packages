@@ -14,3 +14,19 @@ SHA256: 4fad78368da7d225d1869fe1f344c490c4a8637edceab31dfddaf9f7a541750d
 SHA512: 069a8ace2bf90dc493df4cddaade52d8277b5678b0e1bb20048ba9f7b78e3f8eca98a4dcc17d9fb9911862ede2520fb948f378a9c647497aa57e58eee321b7ce
 Description: certificate synchronization util
 
+Package: certsync
+Architecture: amd64
+Version: 1.0.1-0~bullseye
+Priority: optional
+Essential: no
+Section: custom
+Maintainer: apt.rebit.sk
+Depends: rsync, socat
+Filename: pool/main/bullseye/certsync-1.0.1-0~bullseye_all.deb
+Size: 2924
+MD5sum: 4759896842091e45e843cd3fb96fdfdd
+SHA1: ac7c8bc651345aa4ff58cf142f44bf2bd3a4936f
+SHA256: ab344fec563d39c7caa6ef6685aedd1bd643675f1e74bf936b64f94d4018f620
+SHA512: 102d8051bc093be92d52128f4adc34d99055be4c8a04d66b996ae21a5288a3e5acc79face5e85ce73085964f5f546ea6d08598549fc8bbcbd26f30aae5dd7cd0
+Description: certificate synchronization util
+

@@ -14,3 +14,19 @@ SHA256: ce489552cddfd5d95870369a0edb77c5da49efa58771888e88e23b67f55487f7
 SHA512: 546d81a2c2e6b593574c70e42961a773ed4585bf9fda05e405b5e2887792b5611dcb99d7718fb5e346b6cf85c3aa829bd72a4af1e3004b400d6d6bd81ec31153
 Description: certificate synchronization util
 
+Package: certsync
+Architecture: amd64
+Version: 1.0.1-0~buster
+Priority: optional
+Essential: no
+Section: custom
+Maintainer: apt.rebit.sk
+Depends: rsync, socat
+Filename: pool/main/buster/certsync-1.0.1-0~buster_all.deb
+Size: 2924
+MD5sum: 11f75b9cb605765fd5d05b25779dd0cd
+SHA1: d59e26ba0246a3d6f86c5bb710b38f6bd54b848f
+SHA256: 9c62891d21a1888b4839c2c11145425e7e00cd57d4c37a7fc7e7c7bd0b2f0409
+SHA512: 69dfbf64e29f83c6ae937093b2b786b3db0c5614c6d879e380dd2a9581624d7c99da74819fa6fa1cbe0d5b57e4ed9bf0ac9d51e5074c8e292b764ef66e9a571d
+Description: certificate synchronization util
+
