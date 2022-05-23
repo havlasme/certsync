@@ -71,13 +71,14 @@ publish to apt repository:
   - 'cp build/*~bullseye_*.deb repo/public/debian/pool/main/bullseye/'
   - 'cp build/*~bionic_*.deb repo/public/ubuntu/pool/main/bionic/'
   - 'cp build/*~focal_*.deb repo/public/ubuntu/pool/main/focal/'
+  - 'TAG="$(make version)"'
   - 'cd repo'
   - 'make clean'
   - 'make rescan'
   - 'git config user.name "build-bot"'
   - 'git config user.email "build-bot@havlas.me"'
   - 'git add public'
-  - 'git commit -m"package version ${VERSION} added"'
+  - 'git commit -m"package version ${TAG} added"'
   - 'git push'
   needs:
   - job: build debian 10 package
