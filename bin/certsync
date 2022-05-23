@@ -68,6 +68,7 @@ function _certsync_main() {
         echo "CERTSYNC_HOST=${CERTSYNC_HOST}" > "/etc/certsync/sync/${domain}"
         echo "CERTSYNC_USERNAME=${CERTSYNC_USERNAME}" >> "/etc/certsync/sync/${domain}"
         echo "CERTSYNC_SSHKEY=${CERTSYNC_SSHKEY}" >> "/etc/certsync/sync/${domain}"
+        chmod 0640 "/etc/certsync/sync/${domain}"
         echo "CERTSYNC_NETHOOK_TOKEN=${CERTSYNC_NETHOOK_TOKEN}" >> "/etc/certsync/sync/${domain}"
 
         mkdir "/etc/certsync/live/${domain}"
