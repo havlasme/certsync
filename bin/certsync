@@ -4,7 +4,7 @@ set -o errexit
 set -o nounset
 shopt -s nullglob
 
-CERTSYNC_VERSION="1.0.0"
+CERTSYNC_VERSION="1.0.1"
 
 function _certsync_hook_deploy() {
     local domain="$1"; shift
